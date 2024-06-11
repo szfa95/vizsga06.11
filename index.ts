@@ -5,4 +5,14 @@ import { UserService } from "./src/interfaces/userservice";
 import {Festival} from "./src/services/fest"
 
 const XFestival = new Event = ("XFest", "qwerty", new Date("2020-02-02"), "land")
+
+console.log("Rendezvények tematikus csoportosítása")
+console.log(Festival.themeGrouping())
+
+console.log("Rendezvények adatai")
+console.log(Festival.eventData())
+
+console.log("Résztvevők adatai")
+console.log(Festival.peopleData())
+
     
