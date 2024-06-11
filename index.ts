@@ -15,4 +15,11 @@ console.log(fest.eventData())
 console.log("Résztvevők adatai")
 console.log(fest.peopleData())
 
+fest.addEvent()
+fest.removeEvent()
+fest.editEvent()
+fest.addPeople()
+fest.removePeople()
+fest.editPeople()
+
     
