@@ -1,5 +1,5 @@
-import { Event } from "./event";
-import { People } from "./people";
+import { Event } from "../classes/event";
+import { People } from "../classes/people";
 import { EventService } from "../interfaces/eventservice";
 import { UserService } from "../interfaces/userservice";
 
