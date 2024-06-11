@@ -17,7 +17,8 @@ export class Festival implements EventService, UserService{
     }
 
     editEvent(name: string, theme: string, date: Date, place: string,): Event {
-        const event = this.event.find(event => event.name == name)
+         const event = this.event.find(event => event.name == name)
+
 
         return event
     }
