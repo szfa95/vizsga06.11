@@ -24,16 +24,16 @@ export class Festival implements EventService, UserService{
         
     }
 
-    eventData(event: Event): void {
-        
+    eventData(name: string): string {
+        return this.Event.find(event => event.name == name) | "nincs ilyen rendezvény"
     }
 
     addPeople(people: People): void {
-        
+        this.people.push(people)
     }
 
-    removePeople(people: People): void {
-        
+    removePeople(id: string): void {
+        this.people = this.people.filter(people => people.id !== id)
     }
 
     editPeople(people: People): void {
