@@ -16,12 +16,14 @@ export class Festival implements EventService, UserService{
         this.event = this.event.filter(event => event.name !== name)
     }
 
-    editEvent(event: Event): void {
-        
+    editEvent(name: string, theme: string, date: Date, place: string,): Event {
+        const event = this.event.find(event => event.name == name)
+
+        return event
     }
 
-    themeGrouping(event: Event): void {
-        
+    themeGrouping(theme: string): Event[] {
+        return this.event.filter(event => event.theme ==theme)
     }
 
     eventData(name: string): string {

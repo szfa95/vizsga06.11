@@ -1,9 +1,15 @@
-export class Event {
-    constructor(
-      public name: string,
-      public theme: string,
-      public date: Date,
-      public place: string,
-      public registeredPeople: []
-    ) {}
+export interface Event {
+    name: string,
+    theme: string,
+    date: Date,
+    place: string,
+    registeredPeople?: []
+  }
+
+
+  let XFestival: Event = {
+    name: "XFest",
+    theme: "qwerty",
+    date: new Date("2020-02-02"),
+    place: "land",
   }
