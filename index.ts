@@ -4,14 +4,16 @@ import { EventService } from "./src/interfaces/eventservice";
 import { UserService } from "./src/interfaces/userservice";
 
 export class Festival implements EventService, UserService{
+    private event: Event[] = []
+    private people: People[] = []
 
 
     addEvent(event: Event): void {
-        
+        this.event.push(event)
     }
 
-    removeEvent(event: Event): void {
-        
+    removeEvent(name: string): void {
+        this.event = this.event.filter(event => event.name !== name)
     }
 
     editEvent(event: Event): void {
