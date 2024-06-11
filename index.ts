@@ -4,7 +4,7 @@ import { EventService } from "./src/interfaces/eventservice";
 import { UserService } from "./src/interfaces/userservice";
 import {Festival} from "./src/services/fest"
 
-const XFestival = new Event = ("XFest", "qwerty", new Date("2020-02-02"), "land")
+const XFestival = new Event = (name: "XFest", theme: "qwerty", Date: "2020-02-02", place: "land")
 
 console.log("Rendezvények tematikus csoportosítása")
 console.log(fest.themeGrouping())
