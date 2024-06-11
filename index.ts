@@ -42,7 +42,7 @@ export class Festival implements EventService, UserService{
         
     }
 
-    peopleData(people: People): void {
-        
+    peopleData(people: People): string {
+        return this.People.find(people => people.name == name) | "nincs ilyen rendezvény"
     }
 }
