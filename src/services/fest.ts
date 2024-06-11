@@ -28,7 +28,7 @@ export class Festival implements EventService, UserService{
     }
 
     eventData(name: string): string {
-        return this.Event.find(event => event.name == name) | "nincs ilyen rendezvény"
+        return this.event.find(event => event.name == name) | "nincs ilyen rendezvény"
     }
 
     addPeople(people: People): void {
@@ -43,7 +43,7 @@ export class Festival implements EventService, UserService{
         
     }
 
-    peopleData(people: People): string {
-        return this.People.find(people => people.name == name) | "nincs ilyen rendezvény"
+    peopleData(name: string): string {
+        return this.people.find(people => people.name == name) | "nincs ilyen személy"
     }
 }

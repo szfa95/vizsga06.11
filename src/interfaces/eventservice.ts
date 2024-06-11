@@ -5,5 +5,5 @@ export interface EventService {
   removeEvent(name: string): void;
   editEvent(event: Event): void;
   themeGrouping(theme: string): void;
-  eventData(event: Event): void
+  eventData(name: string): string
 }
